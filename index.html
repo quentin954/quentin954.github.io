@@ -25,6 +25,57 @@
   <link rel="stylesheet" type="text/css" href="assets/css/virtual.css">
   
   <link rel="stylesheet" type="text/css" href="assets/css/topbar.virtual.css">
+    <style>
+    /* Styles personnalisés pour les nouvelles sections */
+    .section-highlight {
+      background-color: #f8f9fa;
+      border-left: 4px solid #dc3545;
+      padding: 25px;
+      margin: 30px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    .section-highlight h2 {
+      color: #dc3545;
+      margin-bottom: 20px;
+    }
+    
+    .timeline-point {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 20px;
+    }
+    
+    .timeline-point:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 15px;
+      height: 15px;
+      background: #dc3545;
+      border-radius: 50%;
+    }
+    
+    .skills-summary {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    
+    .skill-tag {
+      background-color: #e9ecef;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+    
+    .skill-tag.highlight {
+      background-color: #dc3545;
+      color: white;
+    }
+  </style>
 </head>
 <body class="theme-red">
   
@@ -50,7 +101,13 @@
               <a href="#about" class="nav-link" data-animate="scrolling">À propos</a>
             </li>
             <li class="nav-item">
+              <a href="#introduction" class="nav-link" data-animate="scrolling">Parcours</a>
+            </li>
+            <li class="nav-item">
               <a href="#portfolio" class="nav-link" data-animate="scrolling">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#conclusion" class="nav-link" data-animate="scrolling">Bilan</a>
             </li>
             <li class="nav-item">
               <a href="#contact" class="nav-link" data-animate="scrolling">Contact</a>
@@ -84,7 +141,7 @@
         <div class="col-lg-6 offset-lg-1 wow fadeInRight">
           <h1 class="fw-light">Quentin Meri</h1>
           <h5 class="fg-theme mb-3">Étudiant en informatique</h5>
-          <p class="text-muted">Je suis un étudiant en informatique à l'IUT de Sorbonne Paris Nord, en deuxième année de BUT informatique. Je suis passionné par la création de logiciels et par la compréhension de leur fonctionnement.</p>
+          <p class="text-muted">Je suis un étudiant en informatique à l'IUT de Sorbonne Paris Nord, en troisième année de BUT informatique. Je suis passionné par la création de logiciels et par la compréhension de leur fonctionnement.</p>
           <a href="assets/pdf/CV_de_Quentin_Meri.pdf" class="btn btn-theme-outline">Télécharger mon CV</a>
           <a href="https://github.com/quentin954" class="btn btn-theme-outline">Voir mon Github</a>
         </div>
@@ -98,25 +155,43 @@
             <div class="progress-wrapper wow fadeInUp">
               <span class="caption">JavaScript</span>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 86%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">86%</div>
+                <div class="progress-bar" role="progressbar" style="width: 86%;" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">86%</div>
               </div>
             </div>
             <div class="progress-wrapper wow fadeInUp">
               <span class="caption">PHP</span>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">95%</div>
+                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
               </div>
             </div>
             <div class="progress-wrapper wow fadeInUp">
               <span class="caption">HTML + CSS</span>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
               </div>
             </div>
             <div class="progress-wrapper wow fadeInUp">
               <span class="caption">Python</span>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Google Apps Script</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Node.js</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Visual Studio Code</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
               </div>
             </div>
           </div>
@@ -126,25 +201,49 @@
             <div class="progress-wrapper wow fadeInUp">
               <span class="caption">Angular</span>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
               </div>
             </div>
             <div class="progress-wrapper wow fadeInUp">
               <span class="caption">Java - Spring Boot</span>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">90%</div>
+                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
               </div>
             </div>
             <div class="progress-wrapper wow fadeInUp">
               <span class="caption">SQL</span>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">85%</div>
+                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
               </div>
             </div>
             <div class="progress-wrapper wow fadeInUp">
               <span class="caption">Git</span>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">95%</div>
+                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">React</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">MongoDB</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">IntelliJ IDEA</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Docker</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
               </div>
             </div>
           </div>
@@ -161,7 +260,7 @@
               <div class="details">
                 <h5>Université Sorbonne Paris Nord, Villetaneuse</h5>
                 <small class="fg-theme">Septembre 2022 - Juillet 2025 (prévu)</small>
-                <p>Étudiant en 2ème année de BUT Informatique à l'IUT de Villetaneuse</p>
+                <p>Étudiant en 3ème année de BUT Informatique à l'IUT de Villetaneuse</p>
               </div>
             </li>
             <li>
@@ -178,19 +277,94 @@
           <h2 class="fw-normal">Expérience</h2>
           <ul class="timeline mt-4 pr-md-5">
             <li>
+              <div class="title">2025</div>
+              <div class="details">
+                <h5>Développeur back end/front end</h5>
+                <small class="fg-theme">Mars 2025 - Juin 2025</small>
+                <p>
+                  J'ai effectué un stage de neuf semaines chez <mark>Franciliane</mark>, une filiale de <mark>Veolia</mark> travaillant pour le
+                  <strong>Syndicat des Eaux d’Île-de-France</strong>. J’ai intégré une équipe en charge du suivi de la qualité de l’eau, 
+                  dans le cadre du développement d’une nouvelle application nommée <strong>AgefO</strong> (Application de Gestion et d’Édition des Fiches de la Qualité de l’Eau).
+                </p>
+                <p>
+                  L’application permet :
+                </p>
+                <ul>
+                  <li>La création, consultation, modification et exportation des fiches au format PDF</li>
+                  <li>L’export en masse pour transmission aux ARS (Agences Régionales de Santé)</li>
+                  <li>Une meilleure traçabilité et cohérence des données entre les différentes usines</li>
+                </ul>
+                <p>
+                  Mon rôle a été de comprendre les besoins métiers, de formaliser les fonctionnalités, et de développer l’application avec une approche itérative. Des réunions 
+                  régulières avec l’utilisatrice principale m’ont permis d’ajuster le développement aux besoins concrets du terrain.
+                </p>
+                <p>
+                  Sur le plan technique, le projet a été développé en <mark>Google Apps Script</mark>, un framework basé sur <mark>JavaScript</mark>.  
+                  L’architecture repose sur un modèle client-serveur.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="title">2025</div>
+              <div class="details">
+                <h5>SAE S5 - Développement avancé : Application Web Poketa</h5>
+                <small class="fg-theme">Octobre 2024 - Janvier 2025</small>
+                <p><strong>Objectif :</strong> Concevoir et développer une application web complète permettant de gérer une collection de cartes Pokémon, en mettant en œuvre des compétences avancées en développement back-end et front-end.</p>
+                <p><strong>Nombre de personnes :</strong> 5</p>
+                <p><strong>Tâches que j'ai accomplies :</strong></p>
+                <ul>
+                  <li>Conception de l’architecture de l’application</li>
+                  <li>Développement de la partie back-end en Node.js (API REST, base de données, sécurité)</li>
+                  <li>Intégration complète de l’API dans le front-end React</li>
+                  <li>Collaboration en équipe via GitHub et coordination des tâches</li>
+                </ul>
+                <p><strong>Outils utilisés :</strong> Visual Studio Code, Node.js, MongoDB, React, Git, Discord</p>
+                <p><strong>Résultats obtenus :</strong> Application fonctionnelle avec une interface utilisateur fluide et base de données opérationnelle</p>
+                <p><strong>Valorisation professionnelle :</strong> Expérience complète en full-stack JavaScript, travail en équipe agile, conception d’API</p>
+              </div>
+            </li>
+            <li>
               <div class="title">2024</div>
               <div class="details">
                 <h5>Développeur back end/front end</h5>
                 <small class="fg-theme">Janvier 2024 - Mars 2024</small>
-                <p>J'ai eu l'opportunité d'effectuer un stage de neuf semaines chez <mark>Enedis</mark>. Cette expérience m'a permis d'entrer dans le monde professionnel et d'apprendre la méthode agile ainsi que son utilisation en équipe.</p>
+                <p>J'ai effectué un stage de neuf semaines chez <mark>Enedis</mark> au sein de l'équipe Saturne, travaillant sur le <strong>Projet Branchements</strong>. Ce projet répond à une obligation légale concernant la certification de conformité des plans du réseau enterré sensible.</p>
+                <p>J'ai contribué au développement du <strong>Portail Branchements</strong>, une plateforme permettant :</p>
+                <ul>
+                  <li>La création et le suivi des affaires de fiabilisation de la cartographie</li>
+                  <li>La sécurisation des échanges de données entre parties internes et externes</li>
+                  <li>La facilitation des échanges de dossiers d'analyse entre intervenants</li>
+                  <li>Le suivi statistique des branchements traités</li>
+                </ul>
+                <p><strong>Environnement technique :</strong></p>
+                <ul>
+                  <li>Développement avec <mark>Angular</mark> et <mark>Spring Boot</mark></li>
+                  <li>Utilisation de Teams pour la communication</li>
+                  <li>GoJira pour la gestion agile des sprints</li>
+                  <li>GoConfluence pour la documentation</li>
+                  <li>Placide (GitLab) pour le versioning et le déploiement</li>
+                </ul>
+                <p>Cette expérience m'a permis de travailler en équipe selon la méthodologie agile sur un projet d'envergure avec des enjeux réels pour l'entreprise.</p>
               </div>
             </li>
             <li>
               <div class="title">2023</div>
               <div class="details">
-                <h5>Développement d'une application web</h5>
+                <h5>SAE - Développement Web : Perform Vision</h5>
                 <small class="fg-theme">Novembre 2023 - Janvier 2024</small>
-                <p>Dans le cadre d'un projet universitaire, j'ai eu l'opportunité, avec l'aide de quatre camarades, de développer une application web complète et fonctionnelle en suivant un cahier des charges qui nous a été donné.</p>
+                <p><strong>Objectif :</strong> Concevoir et développer une plateforme web interactive pour SAS Perform Vision, facilitant la mise en relation entre formateurs et clients dans le domaine de la formation professionnelle.</p>
+                <p><strong>Nombre de personnes :</strong> 5</p>
+                <p><strong>Tâches que j'ai accomplies :</strong></p>
+                <ul>
+                  <li>Mise en place de l'architecture MVC en PHP pur</li>
+                  <li>Développement des fonctionnalités d'inscription et de gestion des profils formateurs</li>
+                  <li>Implémentation du système de recherche par compétences</li>
+                  <li>Gestion de la base de données PostgreSQL</li>
+                  <li>Collaboration et versioning avec Git</li>
+                </ul>
+                <p><strong>Outils utilisés :</strong> Visual Studio Code, PHP, PostgreSQL, Git, Discord</p>
+                <p><strong>Résultats obtenus :</strong> Site web fonctionnel permettant l'inscription des formateurs, la déclaration de compétences, et la recherche de formateurs par les clients</p>
+                <p><strong>Valorisation professionnelle :</strong> Expérience en développement PHP, architecture MVC, gestion de base de données relationnelle, travail en équipe</p>
               </div>
             </li>
           </ul>
@@ -198,6 +372,68 @@
       </div>
     </div>
   </div>
+
+  <!-- Section Introduction -->
+  <div class="vg-page" id="introduction" style="background-color: #f8f9fa; padding: 80px 0;">
+    <div class="container">
+      <div class="text-center wow fadeInUp">
+        <div class="badge badge-subhead">Parcours</div>
+      </div>
+      <h1 class="text-center fw-normal wow fadeInUp mb-5">Mon parcours et mes ambitions</h1>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="section-highlight wow fadeInUp">
+            <h2>Logique de mon parcours</h2>
+            <p>Mon parcours académique et professionnel a commencé grâce à une passion pour l'informatique qui a toujours été dans la création mais plus particulièrement le développement logiciel.</p>
+            
+            <div class="timeline-point">
+              <h4>Bac STI2D spécialité SIN</h4>
+              <p>Ce diplôme a été mon premier choix pour atteindre mon but de devenir développeur informatique. J'y ai acquis des bases en systèmes d'information numériques et en programmation. Cela a confirmé mon choix et mon envie d'évoluer pour faire plus.</p>
+            </div>
+            
+            <div class="timeline-point">
+              <h4>BUT Informatique</h4>
+              <p>Cette formation m'a permis de faire évoluer mes connaissances théoriques tout en développant des compétences pratiques à travers les nombreux projets réalisés lors des SAE. Les deux dernières années d'études ont été l'occasion de faire mes premières expériences professionnelles lors de stages qui ont rassuré et confirmé mon choix d'orientation.</p>
+            </div>
+          </div>
+          
+          <div class="section-highlight wow fadeInUp" data-wow-delay="0.2s">
+            <h2>Choix d'orientation</h2>
+            <p>Mon orientation vers l'informatique est le résultat de mon envie de créer et comprendre comment cela fonctionne :</p>
+            
+            <div class="d-flex align-items-start mb-3">
+              <div class="mr-3 fg-theme" style="font-size: 24px;">•</div>
+              <div>
+                <strong>D'abord j'ai développé une passion pour la compréhension du comment cela peut fonctionner et pourquoi</strong> - J'ai toujours été fasciné par la manière dont les choses fonctionnent et par la conception de mes idées en logiciels fonctionnels.
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-start mb-3">
+              <div class="mr-3 fg-theme" style="font-size: 24px;">•</div>
+              <div>
+                <strong>Ensuite ce qui m'attire aussi énormément c'est l'innovation technologique dans le domaine informatique</strong> - Depuis que j'ai rejoint le domaine de l'informatique il a tellement évolué en nous permettant de toujours avoir de nouvelles technologies à apprendre.
+              </div>
+            </div>
+          </div>
+          
+          <div class="section-highlight wow fadeInUp" data-wow-delay="0.4s">
+            <h2>Ambitions professionnelles</h2>
+            <p>À court terme, je vise à intégrer une équipe en tant que développeur full-stack junior où je pourrai mettre en pratique mes compétences techniques tout en continuant à apprendre et prendre de l'expérience.</p>
+            <p>À moyen terme, j'aimerais davantage être dans la conception et l'architecture de solutions logicielles complexes.</p>
+            <p>À long terme, je voudrais avoir un rôle de lead développeur ou d'architecte logiciel sur des projets intéressants pour moi.</p>
+          </div>
+          
+          <div class="section-highlight wow fadeInUp" data-wow-delay="0.6s">
+            <h2>Poursuite d'études</h2>
+            <p>Après l'obtention de mon BUT, je prévois de poursuivre mes études en intégrant un Master en Ingénierie Logicielle. Cette formation complémentaire me permettra d'acquérir une meilleure expertise sur la conception et l'architecture de logiciel.</p>
+            <p>Je suis particulièrement intéressé par la conception de l'architecture de l'application et de sa mise en place dans le projet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Section Introduction -->
   
   <div class="vg-page page-service">
     <div class="container">
@@ -239,6 +475,17 @@
             </div>
           </div>
         </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="ti-shortcode"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">Développement Google Apps Script</h4>
+              <p>J'ai une expérience dans le développement de solutions Google Apps Script pour créer une application avec les applications Google Workspace</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -247,11 +494,11 @@
     <div class="container">
       <div class="row section-counter justify-content-center">
         <div class="col-md-6 col-lg-3 py-4 wow fadeIn mx-auto">
-          <h1 class="number" data-number="7">7</h1>
+          <h1 class="number" data-number="7">8</h1>
           <span>Projets Terminés</span>
         </div>
         <div class="col-md-6 col-lg-3 py-4 wow fadeIn mx-auto">
-          <h1 class="number" data-number="2">2</h1>
+          <h1 class="number" data-number="2">3</h1>
           <span>Projets en Cours</span>
         </div>
       </div>
@@ -294,10 +541,130 @@
               <p>Outil de pilotage pour l'IUT de Villetaneuse</p>
             </div>
           </div>
+        </div>
+        <div class="grid-item apps wow zoomIn">
+          <div class="img-place" data-src="assets/img/work/work-3.jpg" data-fancybox data-caption="
+            <a href='https://github.com/quentin954/Universite-Projet/tree/main/Semestre%205/poketa-sae' target='_blank'>
+              <h5 class='fg-theme'>SAE Poketa</h5>
+            </a>
+            <p>Projet SAE réalisé au semestre 5 : développement d'une application conçue pour gérer et suivre votre collection de cartes Pokémon. Elle permet aux utilisateurs de répertorier facilement les cartes qu'ils possèdent dans la vraie vie, offrant un moyen pratique d'organiser leur collection et d'en assurer le suivi.</p>
+          ">
+            <img src="assets/img/work/work-3.jpg" alt="">
+            <div class="img-caption">
+              <h5 class="fg-theme">Poketa</h5>
+              <p>Projet SAE réalisé au semestre 5 : développement d'une application</p>
+            </div>
+          </div>
         </div>        
       </div> <!-- Fin gridder -->
     </div>
   </div> <!-- Fin de la page Portfolio -->
+
+  <!-- Section Conclusion -->
+  <div class="vg-page" id="conclusion" style="background-color: #fff; padding: 80px 0; border-top: 1px solid #eee;">
+    <div class="container">
+      <div class="text-center wow fadeInUp">
+        <div class="badge badge-subhead">Bilan</div>
+      </div>
+      <h1 class="text-center fw-normal wow fadeInUp mb-5">Bilan de mon parcours</h1>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="section-highlight wow fadeInUp">
+            <h2>Points forts</h2>
+            
+            <div class="d-flex align-items-start mb-3">
+              <div class="mr-3 fg-theme" style="font-size: 24px;">•</div>
+              <div>
+                <strong>Polyvalence technique</strong> - Maîtrisant à la fois le développement front-end et back-end, je peux intervenir sur l'ensemble des parties du développement d'une application.
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-start mb-3">
+              <div class="mr-3 fg-theme" style="font-size: 24px;">•</div>
+              <div>
+                <strong>Adaptabilité</strong> - Mes deux expériences en entreprise m'ont appris à m'adapter rapidement à de nouveaux environnements, outils, technologies et méthodologies.
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-start mb-3">
+              <div class="mr-3 fg-theme" style="font-size: 24px;">•</div>
+              <div>
+                <strong>Esprit d'équipe</strong> - Travailler sur des projets en équipe m'a permis de développer m'acapacité à communiquer et à collaborer avec autres développeurs.
+              </div>
+            </div>
+          </div>
+          
+          <div class="section-highlight wow fadeInUp" data-wow-delay="0.2s">
+            <h2>Points de vigilance</h2>
+            
+            <div class="d-flex align-items-start mb-3">
+              <div class="mr-3 fg-theme" style="font-size: 24px;">•</div>
+              <div>
+                <strong>Veille technologique et adaptation continue</strong> - Dans ce domaine où les technologies évoluent très rapidement et où de nouveaux frameworks sont crée tout le temps, je dois maintenir une veille technologique active et continuer à me former régulièrement pour rester à jour avec les dernières sorties.
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-start mb-3">
+              <div class="mr-3 fg-theme" style="font-size: 24px;">•</div>
+              <div>
+                <strong>Perfectionnement en architecture logicielle</strong> - Bien que je maîtrise les bases du développement, je dois approfondir mes connaissances en architecture logicielle pour concevoir des systèmes encore plus robustes.
+              </div>
+            </div>
+          </div>
+          
+          <div class="section-highlight wow fadeInUp" data-wow-delay="0.4s">
+            <h2>Bonnes pratiques acquises</h2>
+            
+            <div class="d-flex align-items-start mb-3">
+              <div class="mr-3 fg-theme" style="font-size: 24px;">•</div>
+              <div>
+                <strong>Méthodologies agiles</strong> - Une de mes expérience en entreprise m'a formé aux méthodologies agiles (Scrum), particulièrement efficaces pour la gestion de projets informatiques.
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-start mb-3">
+              <div class="mr-3 fg-theme" style="font-size: 24px;">•</div>
+              <div>
+                <strong>Tests et qualité du code</strong> - J'ai appris l'importance cruciale des tests unitaires pour garantir la robustesse et la maintenabilité de l'applications.
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-start mb-3">
+              <div class="mr-3 fg-theme" style="font-size: 24px;">•</div>
+              <div>
+                <strong>Documentation</strong> - Lors de mon deuxième stage j'ai compris que la documentation claire et à jour est aussi importante que le code pour garantir la continuité du projet.
+              </div>
+            </div>
+          </div>
+          
+          <div class="section-highlight wow fadeInUp" data-wow-delay="0.6s">
+            <h2>Acquis pour la suite</h2>
+            <p>Ce parcours en BUT Informatique m'a apporté bien plus que des compétences techniques :</p>
+            
+            <div class="d-flex align-items-start mb-3">
+              <div class="mr-3 fg-theme" style="font-size: 24px;">•</div>
+              <div>
+                <strong>Autonomie et prise d'initiative</strong> - Capable de mener un projet de sa conception à sa réalisation tout en s'adaptant aux contraintes et les imprévus.
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-start mb-3">
+              <div class="mr-3 fg-theme" style="font-size: 24px;">•</div>
+              <div>
+                <strong>Capacité d'analyse</strong> - Aptitude à comprendre des besoins demandé et à les transformer en application.
+              </div>
+            </div>
+            
+            <div class="text-center mt-4">
+              <p class="lead fg-theme">Ces acquis constituent une base solide pour ma future carrière et mes études à venir.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Section Conclusion -->
   
   <!-- Section Contact -->
   <div class="vg-page page-contact" id="contact">
@@ -340,7 +707,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <p class="text-center mb-0 mt-4">Copyright &copy;2024. All right reserved</p>
+          <p class="text-center mb-0 mt-4">Copyright &copy;2025. All right reserved</p>
         </div>
       </div>
     </div>
